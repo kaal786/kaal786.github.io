@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xD</title>
+    <link rel="stylesheet" href="/first.css">
+</head>
+<body>
+    <nav>
+        <li class='navbaricon'>Home</li>
+        <!-- <li class='navbaricon'>About</li>
+        <li class='navbaricon'>Contact</li> -->
+    </nav>
+
+    <div class="container">
+        <div class="component titles">
+        <!-- <a class="item" id='item1' value="/Statistics__HTML/index.html" onclick="FrameVis()" href="/Statistics__HTML/index.html">Statstics</a> -->
+        <a class="item" id='item1' data-value="/Statistics__HTML/index.html" onclick="FrameVis()" >Statstics1</a>
+        <a class="item"  href="/Aptitude_HTML/index.html">Aptitude</a>
+       <select id="select">
+           <option value="/Statistics__HTML/index.html">Statstics</option>
+           <option value="/Aptitude_HTML/index.html">Aptitude</option>
+       </select>
+       <button onclick="FrameVis()">Enter</button>
+    </div>
+        <!-- <iframe class="component" src="/Statistics__HTML/index.html" height="500px" width="1000px" frameborder="0"></iframe> -->
+        <iframe id="myframe" class="component" src="" height="555px" width="1000px" frameborder="0"></iframe>
+
+    </div>
+</body>
+
+<script>
+    function FrameVis(){
+        var e =document.getElementById('select');
+        var newsrc = e.options[e.selectedIndex].value;;
+        console.log()
+        
+        // document.getElementById('myframe').src='/Statistics__HTML/index.html';
+        document.getElementById('myframe').src=newsrc;
+
+    }
+
+//     $("a").click(function(){
+//     i=$(this).data("value");
+//     console.log(i)
+// });
+
+</script>
+</html>
