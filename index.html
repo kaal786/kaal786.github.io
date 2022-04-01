@@ -15,37 +15,21 @@
     </nav>
 
     <div class="container">
-        <div class="component titles">
-        <!-- <a class="item" id='item1' value="/Statistics__HTML/index.html" onclick="FrameVis()" href="/Statistics__HTML/index.html">Statstics</a> -->
-        <a class="item" id='item1' data-value="/Statistics__HTML/index.html" onclick="FrameVis()" >Statstics1</a>
-        <a class="item"  href="/Aptitude_HTML/index.html">Aptitude</a>
-       <select id="select">
-           <option value="/Statistics__HTML/index.html">Statstics</option>
-           <option value="/Aptitude_HTML/index.html">Aptitude</option>
-       </select>
-       <button onclick="FrameVis()">Enter</button>
-    </div>
-        <!-- <iframe class="component" src="/Statistics__HTML/index.html" height="500px" width="1000px" frameborder="0"></iframe> -->
-        <iframe id="myframe" class="component" src="" height="555px" width="1000px" frameborder="0"></iframe>
-
+        <div>Regression</div>
+        <div>Classification</div>
+        <div>CNN</div>
+        <div>RNN</div>
+        <div>Timeseries</div>
+        <div>Unsupervised</div>
+        <div>Autoencoder_GAN</div>
+        <div>Tp</div>
+        <div>Utilities</div>
+       
     </div>
 </body>
 
 <script>
-    function FrameVis(){
-        var e =document.getElementById('select');
-        var newsrc = e.options[e.selectedIndex].value;;
-        console.log()
-        
-        // document.getElementById('myframe').src='/Statistics__HTML/index.html';
-        document.getElementById('myframe').src=newsrc;
 
-    }
-
-//     $("a").click(function(){
-//     i=$(this).data("value");
-//     console.log(i)
-// });
 
 </script>
 </html>
