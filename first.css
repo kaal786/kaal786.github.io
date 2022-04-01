@@ -28,9 +28,8 @@ nav{
     flex-direction: column;
     
 }
-.item{
-    margin: 3px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.cat{
+    margin: 10px;
+    padding: 10px;
+    
 }
