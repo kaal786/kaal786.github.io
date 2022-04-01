@@ -16,10 +16,7 @@ nav{
     
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-}
+
 
 .titles{
     width: 250px;
